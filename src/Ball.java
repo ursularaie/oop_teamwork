@@ -1,3 +1,5 @@
 public class Ball {
-    // klassi sisu
+    private double radius; // äkki see random
+    private double mass;
+    private double velocity; // äkki see random
 }
