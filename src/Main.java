@@ -1,3 +1,7 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
+
 public class Main {
     static void main() {
         // siia tulen main stuff, nagu asjade loomine või meetotite käivitamine
@@ -17,4 +21,19 @@ public class Main {
             boolean gravity = false; // kui on gravity objekt, siis seda ilmselt ei ole vaja physics objektil on vaja ja gravity false
         }
     }
+
+    static void timer() { // ilmselt peab tegelt midagi tagastama, aga hetkel ei tea mida ja peaks nime muutma või läheb main meetodisse
+        int delay = 100; //milliseconds
+        ActionListener taskPerformer = evt -> System.out.println("Uus frame");
+        new Timer(delay, taskPerformer).start();
+    }
 }
+// sellega saab testida timer(), mis on vaja hiljem animatsioonis, et frame uuendada enne ei peaks vaja olema
+    /*try {
+        Thread.sleep(2000);
+        }
+    catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+
+                System.out.println("Program finished.");*/
