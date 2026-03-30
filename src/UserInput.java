@@ -1,8 +1,9 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-class TestScanner {
-    public static void main(String args[]) {
+class UserInput {
+    // ilmselt parem tõsta main klassi meetodina userInput
+    public static boolean userAnswer() {
 
         Scanner s = new Scanner(System.in);
 
@@ -20,5 +21,6 @@ class TestScanner {
         }
 
         s.close();
+        return gravity;
     }
 }

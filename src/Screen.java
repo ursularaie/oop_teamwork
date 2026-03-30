@@ -14,4 +14,6 @@ public class Screen {
     public int getY() {
         return y;
     }
+
+    // siia tuleb meetod, mis joonistab ekraani, kui hakkab tegema graafikat
 }
