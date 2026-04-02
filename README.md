@@ -1,37 +1,34 @@
 // english below
+Autorid: Ursula Raie (, oli paariline, aga ta kadus ära)
 # Palli liikumise simulatsioon java keeles
 ## See repositoorium sisaldab faile palli liikumise simulatsiooni jaoks.
 ## Tutvustus
-Mäng koosneb neljast ekraanist, igal ekraanil on kolm korda võimalik teha valik, kas võitluse või võlujoogi vahel. Võitlusest saab tegelane xp-d ning on väike võimalus
-elu juurde saada ja võlujook, kas ravib või teeb haiget ning ei anna xp-d. On ka võimalik leida maagiline raamat, mis teeb kõik joogid ravivaks ning kui on kogutud 100xp, 
-siis ei saa tegelane enam haiget. Liikuda saab klaviatuuri nooltega. Mäng on eesti keeles.
+Programm simuleerib palli liikumist mingi suvalise kiirusega, kus kasutaja otsustab valib palli raadiuse ja kas kasutada gravitatsiooni või ei. Programm kuvab terminali palli kordinaadid ette antud suurusega ekraanis, koos palli ülejäänud infoga.
+Klass Screen on klass pigem sellepärast, et oleks parem visualiseerida. Klass Ball on palli info ja meetod movement(), kus arvutatakse palli kordinaate, setCoordinates() omistab kordinaadid ballile, sellest tuleb ka info, kas programm peaks töötamise lõpetama. Main klassis on meetod main(), mis korraldab programmi peamist tööd ja meetodid userAnswerBallRadius() ja userAnswerGravity(), mis küsivad kasutajalt vastavalt palli raadiuse ja kas kasutada gravitatsiooni.
+## Projekti tegemise protsess
+* Siis kui ma veel sain paarilisega kontakti otsustasime idee, mida küsime kasutajalt ja mis on projekti struktuur ning mis klasse meil on vaja;
+* kadus kontakt paarilisega;
+* kui hakkasin ise tegema, siis vaatasin, et mulle piisab klassidest: Ball.java, Main.java ja Screen.java;
+* tegin alguses Screen.java ja Ball.java alge;
+* kirjutasin küsimused kasutajale;
+* tegin algelised objektid main() meetodis testimiseks;
+* tegin movement() meetodi, kus programm hakkas koordinaate arvutama ning main() meetodis tsükli, et arvutusi näha;
+* lisasin gravitasiooni ja põrkest tuleneva aeglustuse ning millal pall seisma jääb;
+* parandasin tsüklit.
+## Ajakulu
+Umbes 4 tundi kokku äkki.
+## Mured
+Palli liikumise füüsika tuli peamiselt AI-lt, sest ise ma ei mäleta enam põhimõtteliselt midagi füüsikast.
+## Hinnang tulemusele
+Tahaks väga loota, et programm töötab õigesti. Kuigi kirjutasin kõik koodi ise oleks tahtnud, et ei oleks pidanud füüsika osa kohta AI-lt nii palju küsima. Programm tundub natuke liiga vähe.
+## Testimine
+Tegin mingid objektid valmis ja vaatsin, et programm ei viskaks erroreid ja väljund näeks õige välja ning, et programm lõpeks.
 ## Kui on soov kasutada projekti
-* klooni repo
-* see projekt kasutab pygame, sys ja random teeke, ilmselt on vaja sys ja pygame installida, üks võimalus on kasutada pip install, aga võib-olla on lihtsam seda teha graafilisest liidesest
-* peaks olema jooksutatav
-* kui tekib viga, siis üks võimalus on, et teegid on vales kaustas
+* klooni repo.
 ## Teada olevad vead
 * hetkel ei ole teada ühestki veast, võib muutuda ajaga;
 * kui leida viga palun kirjutada issues juurde.
 ## Plaanitud muudatused
-* Teha kood loetavamaks;
-* muuta üles liikumine hüppamiseks;
-* platvormid teha mitte läbi liigutavateks.
-# Simplistic dungeon crawler game with pygame
-## This repo consists of files for a simple and fast dungeon crawler game and is made for a school project.
-## Intro
-The game has four rooms, in each there is a choice between a fight and drinking a magic potion three times. In the fight the hero gains xp and there is a small chance to heal. The
-potion can either heal or hurt the hero. A magicbook can be found, which makes all of the potions heal and at 100 xp the hero will no longer take damage in fights. The movment is 
-controlled by the keyboard. The game itself is in estonian, as are the comments inside the project.
-## Usage
-* fork the repo
-* the project uses pygame, sys and random modules, the pygame and sys modules are likely not already on the computer and need to be installed, for example using pip install or the graafic interface
-* the project should be able to run
-* if there are problems, check whether the modules are in the right folder
-## Known bugs
-* There are currently no known bugs;
-* incase a bug is found, please notify using the issues window;
-## Planned improvments
-* refactored code to be more readable
-* changing up movments to jumping
-* platforms can't be moved through.
+* Teha graafiline liides;
+* lisada failist lugemine ja faili kirjutamine;
+* lisada erinevaid gravitatsioone.
