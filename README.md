@@ -1,4 +1,3 @@
-// english below
 Autorid: Ursula Raie (, oli paariline, aga ta kadus ära)
 # Palli liikumise simulatsioon java keeles
 ## See repositoorium sisaldab faile palli liikumise simulatsiooni jaoks.
